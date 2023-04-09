@@ -1,0 +1,108 @@
+<html>
+    <title>project</title>
+    <meta name="view port" content="width=device-width, intial scale=1.0">
+    <head>
+    </head>
+    <body>
+<h3>scientia</h3>
+<hr>
+<hr>
+
+<p>By 1970, a calculator could be made using just a few chips of low power consumption, allowing portable models powered from rechargeable batteries. The first handheld calculator was a 1967 prototype called Cal Tech, whose development was led by Jack Kilby at Texas Instruments in a research project to produce a portable calculator. It could add, multiply, subtract, and divide, and its output device was a paper tape.[29][30][31][32][33][34] As a result of the "Cal-Tech" project, Texas Instruments was granted master patents on portable calculators.</p>
+<p>The first commercially produced portable calculators appeared in Japan in 1970, and were soon marketed around the world. These included the Sanyo ICC-0081 "Mini Calculator", the Canon Pocketronic, and the Sharp QT-8B "micro Compet". The Canon Pocketronic was a development from the "Cal-Tech" project. It had no traditional display; numerical output was on thermal paper tape.</p>
+<p>Sharp put in great efforts in size and power reduction and introduced in January 1971 the Sharp EL-8, also marketed as the Facit 1111, which was close to being a pocket calculator. It weighed 1.59 pounds (721 grams), had a vacuum fluorescent display, rechargeable NiCad batteries, and initially sold for US$395.</p>
+<p>However, integrated circuit development efforts culminated in early 1971 with the introduction of the first "calculator on a chip", the MK6010 by Mostek,[35] followed by Texas Instruments later in the year. Although these early hand-held calculators were very costly, these advances in electronics, together with developments in display technology (such as the vacuum fluorescent display, LED, and LCD), led within a few years to the cheap pocket calculator available to all.</p>
+<p>In 1971, Pico Electronics[36] and General Instrument also introduced their first collaboration in ICs, a full single chip calculator IC for the Monroe Royal Digital III calculator. Pico was a spinout by five GI design engineers whose vision was to create single chip calculator ICs. Pico and GI went on to have significant success in the burgeoning handheld calculator market.
+
+ <p>  The first truly pocket-sized electronic calculator was the Busicom LE-120A "HANDY", which was marketed early in 1971.[37] Made in Japan, this was also the first calculator to use an LED display, the first hand-held calculator to use a single integrated circuit (then proclaimed as a "calculator on a chip"), the Mostek MK6010, and the first electronic calculator to run off replaceable batteries. Using four AA-size cells the LE-120A measures 4.9 by 2.8 by 0.9 inches (124 mm × 71 mm × 23 mm).</p> 
+    
+  <p>  The first European-made pocket-sized calculator, DB 800[38][39] was made in May 1971 by Digitron in Buje, Croatia (former Yugoslavia) with four functions and an eight-digit display and special characters for a negative number and a warning that the calculation has too many digits to display.</p>
+    
+ <p>   The first American-made pocket-sized calculator, the Bowmar 901B (popularly termed The Bowmar Brain), measuring 5.2 by 3.0 by 1.5 inches (132 mm × 76 mm × 38 mm), came out in the Autumn of 1971, with four functions and an eight-digit red LED display, for US$240, while in August 1972 the four-function Sinclair Executive became the first slimline pocket calculator measuring 5.4 by 2.2 by 0.35 inches (137.2 mm × 55.9 mm × 8.9 mm) and weighing 2.5 ounces (71 g). It retailed for around £79 (US$194 at the time). By the end of the decade, similar calculators were priced less than £5 ($6.85). Following protracted development over the course of two years including a botched partnership with Texas Instruments, Eldorado Electrodata released five pocket calculators in 1972. One called the Touch Magic was "no bigger than a pack of cigarettes" according to Administrative Management.[40]</p>
+    
+  <p>  The first Soviet Union made pocket-sized calculator, the Elektronika B3-04[41] was developed by the end of 1973 and sold at the start of 1974.</p>
+    
+  <p>  One of the first low-cost calculators was the Sinclair Cambridge, launched in August 1973. It retailed for £29.95 ($41.03), or £5 ($6.85) less in kit form. The Sinclair calculators were successful because they were far cheaper than the competition; however, their design led to slow and inaccurate computations of transcendental functions.[42]</p>
+<style>
+     h1{
+            text-align: center;
+            font-size: 40px;
+            color: rgb(0, 17, 255);
+        }
+   div{
+    text-align: center;
+   }
+   input{
+    height: 40px;
+    width: 90px;
+   }
+    h3{
+    color: black;  
+    font-size: 90px;
+    text-align: center;
+    position: relative;
+    animation: mymove 5s;
+    }
+    @keyframes mymove{
+        from{top:300px;}
+        to{top:0px}
+    }
+        body{
+    background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEhw_cF3CJDXk8xId9tfWhK-2N_pOL7e15CiNL5Og92anNXrwivzjgYOCLfHTjIuIz8OQuMJKKWQ_kJRIDe8tcaJpMpqu967t33hnMyAPTGm7IOtRwexcltR6GUxWgKoAnlTL_Gv-YJ2qdX7s-EVu317Y0eTZjw-Qvwxq6Gbq5eejGk29O1jfgZysdqHzg=s16000);
+    background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+   }  
+        .center {
+  margin: 0;
+  position: absolute;
+  top: 1099px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+p{
+    color: rgb(0, 255, 55);
+    font-size: 20px;
+    font: bold;
+}
+</style>
+<div class ="container">
+    <div class ="calculator">
+    <form>
+    <div>
+       <p><input type="text" name="display"></p>
+    </div>
+    <div>
+    <input type="button" value="AC"onclick="display.value = '' ">
+    <input type="button" value="DE"onclick="display.value = display.value.toString().slice (0,-1)">
+    <input type="button" value="."onclick="display.value += '.' ">
+    <input type="button" value="/"onclick="display.value += '/' ">
+    </div>
+    <div>
+    <input type="button" value="7"onclick="display.value += '7' ">
+    <input type="button" value="8"onclick="display.value += '8' ">
+    <input type="button" value="9"onclick="display.value += '9' ">
+    <input type="button" value=""onclick="display.value += '' ">
+    </div>
+    <div>
+    <input type="button" value="4"onclick="display.value += '4' ">
+    <input type="button" value="5"onclick="display.value += '5' ">
+    <input type="button" value="6"onclick="display.value += '6' ">
+    <input type="button" value="-"onclick="display.value += '-' ">
+    </div>
+    <div>
+    <input type="button" value="1"onclick="display.value += '1' ">
+    <input type="button" value="2"onclick="display.value += '2' ">
+    <input type="button" value="3"onclick="display.value += '3' ">
+    <input type="button" value="+"onclick="display.value += '+' ">
+    </div>
+    <div>
+    <input type="button" value="00"onclick="display.value += '00' ">
+    <input type="button" value= "0"onclick="display.value += '0' ">
+    <input type="button" value="="onclick="display.value = eval(display.value)" class ="equal">
+    </div>
+    </form>
+<div class="center">
+    </body>
+</html>
